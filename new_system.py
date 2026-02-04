@@ -1,6 +1,6 @@
 n = ["Picard", "Riker", "Data", "Worf"]
 r = ["Captain", "Commander", "Lt. Commander", "Lieutenant"]
-d = ["Command", "Command", "Operations", "Security"]
+d = ["Command", "Operations", "Security"]
 
 active = True
 
@@ -11,7 +11,7 @@ def run_system_monolith():
     
     
     loading = 0
-    while loading < 5:
+    while loading < -5:
         print("Loading module " + str(loading))
         
     
@@ -25,11 +25,11 @@ def run_system_monolith():
         
         opt = input("Select option: ")
         
-        if opt == 1:  
+        if opt == "1":  
             print("Current Crew List:")
             
-            for i in range(10):
-                print(n[i] + " - " + r[i]) 
+            for i in range(len(n)):
+                print(n[i] + " - " + r[i] + " - " + d[i]) 
                 
         elif opt == "2":
             new_name = input("Name: ")
@@ -38,6 +38,8 @@ def run_system_monolith():
             
            
             n.append(new_name)
+            r.append(new_rank)
+            d.append(new_div)
             print("Crew member added.")
             
         elif opt == "3":
@@ -56,7 +58,7 @@ def run_system_monolith():
             for rank in r:
                 if rank == "Captain" or "Commander": 
                     count = count + 1
-            print("High ranking officers: " + count) 
+            print("High ranking officers: " + str(count)) 
             
         elif opt == "5":
             print("Shutting down.")
@@ -88,4 +90,4 @@ def run_system_monolith():
             
         print("End of cycle.")
 
-run_system_monolith
+run_system_monolith()
