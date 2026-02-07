@@ -42,5 +42,9 @@ def main():
             id.append(new_id)
             print("Crew member added.")
 
+        elif option == "3":
 
-        main()
+
+
+
+main()
