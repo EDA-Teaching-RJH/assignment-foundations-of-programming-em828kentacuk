@@ -1,8 +1,8 @@
-name = ["Picard", "Riker", "Data", "Worf"]
-rank = ["Captain", "Commander", "Lt. Commander", "Lieutenant"]
-division = ["Command", "Command", "Operations", "Security"]
-id = [1, 2, 3, 4]
-salary = [1000, 800, 700, 600] 
+name = ["Spock", "Picard", "Riker", "Data", "Worf"]
+rank = ["Captain", "Captain", "Commander", "Lt. Commander", "Lieutenant"]
+division = ["Command", "Command", "Command", "Operations", "Security"]
+id = [1, 2, 3, 4, 5]
+salary = [1100, 1000, 800, 700, 600] 
 
 active = True
 
@@ -111,7 +111,7 @@ def main():
                 
             match filter_by_division:
                     case "Command":
-                        filter_by_division = "Picard", "Riker"
+                        filter_by_division = "Picard", "Riker", "Spock"
                     case "Operations":
                         filter_by_division = "Data"
                     case "Security":

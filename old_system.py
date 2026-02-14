@@ -28,7 +28,7 @@ def run_system_monolith():
 
         # supposed to be == instead of = 
         # change line 31 to len(n) instead of fixed number
-        # add speech marks it line 33 around 1
+        # add speech marks on if opt statement around 1
         # make sure 1 prints division also by adding d[i]
 
         if opt == "1":  
