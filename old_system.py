@@ -8,10 +8,11 @@ def run_system_monolith():
     print("BOOTING SYSTEM...")
     print("...")
     print("WELCOME TO FLEET COMMAND")
-    
+
+    # loading will never reach 5 so will cause infinite loop, change number
     
     loading = 0
-    while loading < 5:
+    while loading < -5:
         print("Loading module " + str(loading))
         
     
@@ -24,11 +25,14 @@ def run_system_monolith():
         print("5. Exit")
         
         opt = input("Select option: ")
+
+        # supposed to be == instead of = 
+        # change line 31 to len(n) instead of fixed number
         
         if opt == 1:  
             print("Current Crew List:")
             
-            for i in range(10):
+            for i in range(len(n)):
                 print(n[i] + " - " + r[i]) 
                 
         elif opt == "2":
@@ -88,4 +92,6 @@ def run_system_monolith():
             
         print("End of cycle.")
 
-run_system_monolith
+run_system_monolith()
+
+# added brackets
