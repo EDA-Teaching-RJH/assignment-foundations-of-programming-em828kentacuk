@@ -28,20 +28,26 @@ def run_system_monolith():
 
         # supposed to be == instead of = 
         # change line 31 to len(n) instead of fixed number
-        
-        if opt == 1:  
+        # add speech marks it line 33 around 1
+        # make sure 1 prints division also by adding d[i]
+
+        if opt == "1":  
             print("Current Crew List:")
             
             for i in range(len(n)):
-                print(n[i] + " - " + r[i]) 
+                print(n[i] + " - " + r[i] + " - " + d[i]) 
                 
         elif opt == "2":
             new_name = input("Name: ")
             new_rank = input("Rank: ")
             new_div = input("Division: ")
             
-           
+           # make sure to append rank and division onto lists
+
             n.append(new_name)
+            r.append(new_rank)
+            d.append(new_div)
+
             print("Crew member added.")
             
         elif opt == "3":
