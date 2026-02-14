@@ -18,7 +18,7 @@ def main():
         print("5. Search Crew")
         print("6. Filter by Division")
         print("7. Calculate Payroll")
-        print("8 Count officers by Rank")
+        print("8. Count officers by Commander or Captain ranks")
         option = input("Select option: ")
 
         if option == "1":
@@ -119,9 +119,22 @@ def main():
             print(f"Output: {filter_by_division}")
 
         elif option == "7":
-            
+
             total = sum(salary)
             print(f"Total crew cost: ${total}")
+
+        elif option == "8":
+
+            value = ("Captain")
+            value_2 = ("Commander")
+            count = rank.count(value)
+            count2 = rank.count(value_2)
+            total = count + count2
+
+            print(f"Captain and Commanders appears {total} times in the list")
+
+
+
             
             
      
