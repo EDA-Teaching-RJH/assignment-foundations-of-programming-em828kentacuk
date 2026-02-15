@@ -106,6 +106,11 @@ def main():
                 print (search_crew_member)
             elif search_crew_member not in name:
                 print("Not found")    
+
+        elif option == "6":
+            
+            print("Choose from:", ", ".join(division))
+            filter_by_division = input("Enter division: ")
         
         
 main()
