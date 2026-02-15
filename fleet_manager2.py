@@ -28,6 +28,14 @@ def main():
                 print(str(id[i]) + " - " + name[i] + " - " + rank[i] + " - " + division[i])  
 
         
+        elif option == "2": 
+
+            new_name = input("Enter crew member's name: ")
+            new_rank = input("Enter crew member's rank: ")
+            new_division = input("Enter crew member's division: ")
+            new_id = int(input("Enter crew member's ID: "))
+
         
         
-        main()
+        
+main()
