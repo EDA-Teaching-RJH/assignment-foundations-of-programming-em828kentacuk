@@ -73,7 +73,32 @@ def main():
             print("1 - Captain")
             print("2 - Commander")
             print("3 - Lt. Commander")
-            print("4 - Liutenant")     
+            print("4 - Liutenant")
+
+            def update_from_user(id, rank):
+
+                new_rank = input("Select new rank: ")
+                if update_id == "1":
+                    update_rank = rank.index(update_id)
+                    rank[update_rank] = "Captain"
+                
+                elif update_id == "2":
+                    update_rank = rank.index(update_id)
+                    rank[update_rank] = "Captain"
+                    
+                
+                elif update_id == "3":
+                    update_rank = rank.index(update_id)
+                    rank[update_rank] = "Lt. Commander"
+            
+
+                elif update_id == "4":
+                    update_rank = rank.index(update_id)
+                    rank[update_rank] = "Liutenant"
+                     
+            
+            update_from_user(id, rank)
+            print("Updated")     
         
         
 main()
