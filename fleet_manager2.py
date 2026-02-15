@@ -62,7 +62,18 @@ def main():
             rank.pop(index)
             division.pop(index)
             id.pop(index)
-            print("Removed.")        
+            print("Removed.")   
+
+        elif option == "4":
+            update_id = int(input("Enter Crew member's ID to update: "))
+            if update_id not in id:
+                print("ID not found. Please enter a valid ID.")
+                continue
+            print("Update rank to:")
+            print("1 - Captain")
+            print("2 - Commander")
+            print("3 - Lt. Commander")
+            print("4 - Liutenant")     
         
         
 main()
