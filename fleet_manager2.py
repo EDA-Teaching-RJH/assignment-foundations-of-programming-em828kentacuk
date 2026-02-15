@@ -98,7 +98,14 @@ def main():
                      
             
             update_from_user(id, rank)
-            print("Updated")     
+            print("Updated") 
+
+        elif option == "5":
+            search_crew_member = input("Enter crew member name: ")
+            if search_crew_member in name:
+                print (search_crew_member)
+            elif search_crew_member not in name:
+                print("Not found")    
         
         
 main()
