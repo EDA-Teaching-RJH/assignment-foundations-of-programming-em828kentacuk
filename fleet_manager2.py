@@ -127,6 +127,15 @@ def main():
 
             total = sum(salary)
             print(f"Total crew cost: ${total}")
-        
+
+        elif option == "8":
+
+            value = ("Captain")
+            value_2 = ("Commander")
+            count = rank.count(value)
+            count2 = rank.count(value_2)
+            total = count + count2
+
+            print(f"Captain and Commanders appears {total} times in the list")
         
 main()
