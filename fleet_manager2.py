@@ -21,6 +21,12 @@ def main():
         print("8. Count officers by Commander or Captain ranks")
         option = input("Select option: ")
 
+        if option == "1":
+
+            for i in range(len(name)):
+                print(" ")
+                print(str(id[i]) + " - " + name[i] + " - " + rank[i] + " - " + division[i])  
+
         
         
         
