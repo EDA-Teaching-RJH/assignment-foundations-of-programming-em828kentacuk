@@ -2,6 +2,8 @@ name = ["Spock", "Picard", "Riker", "Data", "Worf"]
 rank = ["Captain", "Captain", "Commander", "Lt. Commander", "Lieutenant"]
 division = ["Command", "Command", "Command", "Operations", "Security"]
 id = [1, 2, 3, 4, 5]
+id = [1, 2, 3, 4, 5]
+salary = [1100, 1000, 800, 700, 600]
 
 
 active = True
@@ -120,6 +122,11 @@ def main():
                     case "Security":
                         filter_by_division = "Worf"
             print(f"Output: {filter_by_division}")
+
+        elif option == "7":
+
+            total = sum(salary)
+            print(f"Total crew cost: ${total}")
         
         
 main()
