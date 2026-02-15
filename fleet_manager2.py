@@ -52,7 +52,11 @@ def main():
             id.append(new_id)
             print("Crew member added.")
 
-        
+        elif option == "3":
+            remove_id = int(input("Enter crew member's ID to remove: "))
+            if remove_id not in id:
+                print("ID not found. Please enter a valid ID.")
+                continue        
         
         
 main()
