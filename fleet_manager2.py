@@ -56,7 +56,13 @@ def main():
             remove_id = int(input("Enter crew member's ID to remove: "))
             if remove_id not in id:
                 print("ID not found. Please enter a valid ID.")
-                continue        
+                continue
+            index = id.index(int(remove_id))
+            name.pop(index)
+            rank.pop(index)
+            division.pop(index)
+            id.pop(index)
+            print("Removed.")        
         
         
 main()
