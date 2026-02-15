@@ -111,6 +111,15 @@ def main():
             
             print("Choose from:", ", ".join(division))
             filter_by_division = input("Enter division: ")
+
+            match filter_by_division:
+                    case "Command":
+                        filter_by_division = "Picard", "Riker", "Spock"
+                    case "Operations":
+                        filter_by_division = "Data"
+                    case "Security":
+                        filter_by_division = "Worf"
+            print(f"Output: {filter_by_division}")
         
         
 main()
