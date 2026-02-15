@@ -35,6 +35,23 @@ def main():
             new_division = input("Enter crew member's division: ")
             new_id = int(input("Enter crew member's ID: "))
 
+
+            name.append(new_name)
+
+            if new_rank != "Captain" and new_rank != "Commander" and new_rank != "Lt. Commander" and new_rank != "Lieutenant":
+                print("Invalid rank. Please enter a valid rank.")
+                continue
+            rank.append(new_rank)
+            if new_division != "Command" and new_division != "Operations" and new_division != "Security":
+                print("Invalid division. Please enter a valid division.")
+                continue
+            division.append(new_division)
+            if new_id in id:
+                print("ID already exists. Please enter a unique ID.")
+                continue
+            id.append(new_id)
+            print("Crew member added.")
+
         
         
         
